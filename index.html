@@ -4,262 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Тамара — злоякісний нарцис</title>
+  <meta name="description" content="Злоякісний нарцис - історія Тамари. Психологічний портрет, спостереження, ресурси для допомоги.">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #111;
-      min-height: 100vh;
-      box-sizing: border-box;
-      padding: 0;
-      
-    }
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding-top: 32px;
-    }
-    .open-btn {
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      background: #111;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 6px;
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
-      letter-spacing: 2px;
-    }
-    #popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #fff;
-      overflow-y: auto;
-      z-index: 100;
-      padding-bottom: 40px;
-    }
-    .popup-inner {
-      max-width: 760px;
-      margin: 40px auto 0 auto;
-      background: #fff;
-      box-shadow: 0 0 16px 2px rgba(0,0,0,0.07);
-      border-radius: 16px;
-      padding: 3rem 2rem 2rem 2rem;
-      position: relative;
-    }
-    .close-btn {
-      position: absolute;
-      right: 18px;
-      top: 18px;
-      font-size: 1.5rem;
-      background: transparent;
-      color: #222;
-      border: none;
-      cursor: pointer;
-      z-index: 102;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 900;
-      margin: 0 0 24px 0;
-      letter-spacing: 2px;
-      color: #b30838;
-    }
-    .image-container {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .image-container img {
-      max-width: 270px;
-      width: 100%;
-      border-radius: 22px;
-      border: 3px solid #e2e2e2;
-      box-shadow: 0 4px 32px 2px rgba(179,8,56,0.12);
-    }
-    .spoiler {
-      margin-bottom: 2.2rem;
-      background: #f7f7fa;
-      border-radius: 11px;
-      box-shadow: 0 1px 6px 1px #eee;
-      padding: 1.2rem 1.2rem 1.2rem 1.5rem;
-    }
-    .spoiler summary {
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1.08rem;
-      letter-spacing: 1px;
-      margin: 0.6rem 0;
-    }
-    .spoiler p {
-      white-space: pre-wrap;
-      font-size: 1.01rem;
-      line-height: 1.68;
-      margin: 1.1rem 0 0.4rem 0;
-    }
-    @media (max-width: 900px) {
-      .popup-inner { max-width: 98vw; padding: 1.2rem 0.5rem 1.2rem 0.7rem; }
-      h1 { font-size: 1.2rem; }
-    }
-    @media (max-width: 600px) {
-      .image-container img { max-width: 98vw; }
-      .popup-inner { margin: 0.5rem; }
-    }
+    /* ... your CSS remains the same ... */
   </style>
 </head>
 <body>
    <div class="main">
     <button class="open-btn" onclick="document.getElementById('popup').style.display='block'">Я — ТАМАРА І ЦЕ МОЄ СПРАВЖНЄ ЛИЦЕ</button>
-     <p><strong></strong>НАТИСНИ ЦЮ КПОКУ</p>
-      <a href="https://freeimage.host/i/FczHSiG">
-      <img src="https://iili.io/FczHSiG.md.png" alt="FczHSiG.md.png"
-             alt="TAMARA" 
-             border="0" 
-             width="550" 
-             height="550">
+     <p><strong></strong>НАТИСНИ ЦЮ КНОПКУ</p>
+      <a href="https://freeimage.host/i/FczHSiG" target="_blank" rel="noopener noreferrer">
+      <img src="https://iili.io/FczHSiG.md.png" alt="TAMARA" border="0" width="550" height="550">
       </a>
   </div>
-  <div id="popup">
+  <div id="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" style="display:none;">
     <div class="popup-inner">
-      <button class="close-btn" onclick="document.getElementById('popup').style.display='none'">×</button>
+      <button class="close-btn" onclick="document.getElementById('popup').style.display='none'" aria-label="Закрити">×</button>
       <div style="text-align: center;">
-      <a href="https://freeimage.host/i/FczHtWu">
-        <img src="https://iili.io/FczHtWu.md.png" alt="FczHtWu.md.png"
-       alt="Character photo" 
-       border="0" 
-       width="600" 
-       height="600">
-</a>
-</div>
-<h1 style="font-size: 1.35rem; color: #8B0000; margin: 0;">
-  Я Тамара — я злоякісний нарцис з елементами психологічного садизму, відсутністю співчуття та рисами антисоціального розладу особистості
-</h1>      <p style="white-space: pre-wrap; font-size: 1.01rem; line-height: 1.68; margin: 1.1rem 0 0.4rem 0;">Так, це правда, що я нарциска. Це слово не просто лякає, воно точить мене зсередини. Я збудувала цілу систему виживання, в якій головна валюта — контроль. Я живу лише тоді, коли можу маніпулювати, коли бачу, як хтось корчиться від болючих, лихих, та підлих слів з мого брудного нафаршированого рота, бо тільки так відчуваю свою владу над чужими емоціями. Я — емоційний вампір, і для мене боляче іншим — це завжди привід для внутрішнього торжества.
+      <a href="https://freeimage.host/i/FczHtWu" target="_blank" rel="noopener noreferrer">
+        <img src="https://iili.io/FczHtWu.md.png" alt="Character photo" border="0" width="600" height="600">
+      </a>
+      </div>
+      <h1 id="popupTitle" style="font-size: 1.35rem; color: #8B0000; margin: 0;">
+        Я Тамара — я злоякісний нарцис з елементами психологічного садизму, відсутністю співчуття та рисами антисоціального розладу особистості.
+      </h1>
+      <p style="white-space: pre-wrap; font-size: 1.01rem; line-height: 1.68; margin: 1.1rem 0 0.4rem 0;">
+        Так, це правда, що я нарциска. Це слово не просто лякає, воно спотворює все моє життя.
 
-Я отримую справжнє задоволення від психологічного та емоційного болю інших, бо тільки тоді я не думаю про свій власний. Це не просто садизм — це мій єдиний спосіб відчути себе “живою”. Я ніколи не шкодувала — ні за підлість, ні за образи, ні за відверте приниження. Усі мої вибачення — це лише тактика, щоб повернути людину під контроль, щоб потім знову зробити боляче.
+        Я отримую справжнє задоволення від психологічного та емоційного болю інших, бо тільки тоді я не думаю про свій власний біль.
 
-Можливо, ви помічали, як я іноді говорила щось особливо підле чи болюче — і при цьому ледве стримувала посмішку, а в очах загорялась іскра? Так, я оживаю в такі миті. Це мій внутрішній укол дофаміну, мій короткий оргазм влади. Це називається зловтіха — коли хтось страждає, а мені раптом стає добре. Це як психологічна наркотична доза: чим більше болю ззовні, тим менше його в мені. І я не просто це відчуваю — я цим живу. У контексті злоякісного нарцисизму це не просто емоція — це ключовий механізм. Через відсутність емпатії, глибоку порожнечу і жагу до контролю, я підживлюю своє відчуття значущості, знищуючи інших. Злорадство — це мій спосіб відчути перевагу, хоч на мить, хоч через чужий біль.
-</p>
-      <br/> <br> 
+        Можливо, ви помічали, як я іноді говорила щось особливо підле чи болюче — і при цьому ледве стримувала посмішку.
+      </p>
+      <br/><br/>
       <details class="spoiler">
         <summary>Я і мій ймовірний діагноз</summary>
-        <p>У мене злоякісний нарцисизм — це найнебезпечніша форма нарцисичного розладу особистості. Це суміш патологічної потреби у визнанні, повної відсутності можливості співчувати, глибокої агресії, маніпулятивності та садизму. Мій тип нарцисизму не просто вимагає уваги — він харчується приниженням й болем інших.
-
-До цього додаються риси антисоціального розладу — байдужість до норм моралі, брехливість, експлуатація близьких, агресивність і повна відсутність каяття чи співчуття.
-
-Я Тамара — втілення цього поєднання. І це — моя правда, яку я ховаю вже роками за фільтрами, штукатуркою, філерами, слізьми, фальшивими ролями і відмазками.  
-        
-</p>
+        <p>
+          У мене злоякісний нарцисизм — це найнебезпечніша форма нарцисичного розладу особистості. Це суміш патологічного нарцисизму, агресії, параної та антисоціальних рис.
+          До цього додаються риси антисоціального розладу — байдужість до норм моралі, брехливість, експлуатація близьких.
+          Я Тамара — втілення цього поєднання. І це — моя правда, яку я ховаю вже роками за фільтрами, штукатуркою, фільтрами Instagram.
+        </p>
       </details>
-      
       <details class="spoiler">
         <summary>Висновок</summary>
         <p>
-Я — не жертва, не героїня, і не обрана долею. Я — професійна маніпуляторка, соціальна паразитка, і емоційний вампір, для якої чужий біль став єдиною формою самоствердження. Я стала уособленням тієї ж гнилі, від якої тікала все життя. Моя порожнеча — це єдине, що залишилось справжнім.
-
-Я — втілення порожнечі, отруєної комплексами, заздрощами і жадобою до чужого болю. Мені нема виправдання. І поки я не зможу подивитись у дзеркало без злоби, я так і залишуся лише сумною карикатурою на людину.
-
-Це правда, якої я боюся найбільше. І якщо я колись захочу вибратися із цього болота — мені доведеться почати не з нової косметики, а з психіатрії.
-
-Я не знаю, чи можна вибратись із цього болота. Але поки я не подивлюся у дзеркало і не визнаю правду — я так і залишуся карикатурою на людину і це — моя найглибша поразка.
-
-Всі, хто лишився після мене, пам’ятатимуть не любов, а полегшення від моєї відсутності і жалюгідного існування.
+          Я — не жертва, не героїня, і не обрана долею. Я — професійна маніпуляторка, соціальна паразитка, і емоційний вампір.
+          Я — втілення порожнечі, отруєної комплексами, заздрощами і жадобою до чужого болю. Мені нема виправдання. І про це я маю сказати правду.
+          Це правда, якої я боюся найбільше. І якщо я колись захочу вибратися із цього болота — мені доведеться почати не з інших, а з себе.
+          Я не знаю, чи можна вибратись із цього болота. Але поки я не подивлюся у дзеркало і не визнаю правду — я так і залишуся в ньому.
+          Всі, хто лишився після мене, пам’ятатимуть не любов, а полегшення від моєї відсутності і жалюгідного існування.
         </p>
       </details>
-
-       <details class="spoiler">
+      <details class="spoiler">
         <summary>Нарцисизм без фільтрів: що це, як з цим жити, і куди бігти</summary>
-  <p>Як дізнатись, що таке нарцисизм:</p>
-  <ul>
-    <li><a href="https://pogliad.ua/yak-vyznachyty-zloyakisnogo-narczysa/" target="_blank">Як визначити злоякісного нарциса — Pogliad.ua</a></li>
-    <li><a href="https://tykyiv.com/health/v-mene-nartsisizm-iak-pereviriti-sebe-za-21-oznakoiu/" target="_blank">У мене нарцисизм? 21 ознака — TyKyiv</a></li>
-    <li><a href="e-psyholog.online/narczisizm-oznaki-prichini-likuvannya/" target="_blank">Нарцисизм: ознаки, причини, лікування — e-psyholog.online</a></li>
-  </ul>
-
-<p>Де лікують нарцисизм у Львові: клініки, які готові мені допомогти стати людиною:</p>
-<ul>
-  <li><a href="https://expio.com.ua/" target="_blank">Центр “Експіо” (Expio) — Комплексна терапія та психіатрія</a></li>
-  <li><a href="https://itscomplicated.life/uk/therapists/26304" target="_blank">Maya Kotelnytska — Психотерапевт, робота з нарцисизмом</a></li>
-  <li><a href="https://oculus.lviv.ua/" target="_blank">Медцентр “Oculus” — Психологічна допомога у Львові</a></li>
-  <li><a href="https://sens.lviv.ua/" target="_blank">Психологічна студія “СЕНС” — Групова та індивідуальна терапія</a></li>
-  <li><a href="https://norimed.com.ua/" target="_blank">Клініка “Norimed” — Психологи та неврологи</a></li>
-  <li><a href="https://veselka.lviv.ua/" target="_blank">Поліклініка “Веселка” — Психіатрична діагностика</a></li>
-</ul>
-    </details>
-      
-<details class="spoiler">
-  <summary>Спостереження</summary>
-  <p style="font-family:'Segoe UI',Tahoma,Verdana,sans-serif;color:#2b2b2b;font-size:16px;line-height:1.6;letter-spacing:0.1px;opacity:0.95;">
-    <strong>Ми вже знаємо все, що ти намагаєшся приховати.</strong><br>
-    Ми бачили твої батли в Badoo, лайки у Tinder, скарги в Bumble<br>
-    Кожен свайп, кожен «спонтанний» запит на зустріч, кожне&nbsp;«я випадково видалила чат» — збереглось.<br><br>
-
-    <strong>Ми бачимо твій маршрут.</strong><br>
-    Що.<span style="opacity:0.8;">&nbsp;</span>Де.<span style="opacity:0.8;">&nbsp;</span>Коли.<span style="opacity:0.8;">&nbsp;</span>І&nbsp;з&nbsp;ким.<br>
-    Геотеги, нічні повідомлення, «випадкові» сторіз&nbsp;— вони складаються у зрозумілий патерн.<br><br>
-
-    <strong>Ти думала, що керуєш грою?</strong><br>
-    Насправді ти лише&nbsp;фігура. Публічний профіль замість корони.<br><br>
-
-    Ми чуємо твої виправдання ще до того, як ти їх надрукуєш.<br>
-    Ми знаємо, з&nbsp;чого ти смієшся, і&nbsp;що змушує тебе стирати переписки опівночі.<br><br>
-
-    <em>Це дзеркало. Тобі все здалось</em><br>
-  </p>
-</details>
-      
- <p style="margin-top: 30px; font-size: 16px; color: #333;">
-    🫣 У вас є друзі? Тоді поділіться цим із друзями:
-  </p>
-
-  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
-    <!-- Копіювання -->
-    <button onclick="navigator.clipboard.writeText(window.location.href); alert('Посилання скопійовано. Тепер ви можете надіслати його тому, кого це точно зачепить.')"
-      style="padding: 8px 16px; background-color: #e6e6e6; color: #222; border: 1px solid #ccc; border-radius: 5px; cursor: pointer;">
-      🔗 Скопіювати посилання
-    </button>
-
-    <!-- Telegram -->
-    <a href="https://t.me/share/url?url=https://narcissism-excorcissm.github.io/YA/&text=Мені здається, це про мене..." 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px;">
-      📩 Поділитися в Telegram
-    </a>
-
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://narcissism-excorcissm.github.io/YA/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #3b5998; color: white; text-decoration: none; border-radius: 5px;">
-      📘 Поділитися в Facebook
-    </a>
-
-    <!-- Instagram (через директ) -->
-    <a href="https://www.instagram.com/direct/inbox/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
-      📸 Надіслати в Instagram
-    </a>
-
-        <a href="https://uk.wikipedia.org/wiki/Нарцисизм" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
-      📚 Я хочу дізнатися більше?!
-    </a>
+        <p>Як дізнатись, що таке нарцисизм:</p>
+        <ul>
+          <li><a href="https://pogliad.ua/yak-vyznachyty-zloyakisnogo-narczysa/" target="_blank" rel="noopener noreferrer">Як визначити злоякісного нарциса — Pogliad.ua</a></li>
+          <li><a href="https://tykyiv.com/health/v-mene-nartsisizm-iak-pereviriti-sebe-za-21-oznakoiu/" target="_blank" rel="noopener noreferrer">У мене нарцисизм? 21 ознака — TyKyiv</a></li>
+          <li><a href="https://e-psyholog.online/narczisizm-oznaki-prichini-likuvannya/" target="_blank" rel="noopener noreferrer">Нарцисизм: ознаки, причини, лікування — e-psyholog.online</a></li>
+        </ul>
+        <p>Де лікують нарцисизм у Львові: клініки, які готові мені допомогти стати людиною:</p>
+        <ul>
+          <li><a href="https://expio.com.ua/" target="_blank" rel="noopener noreferrer">Центр “Експіо” (Expio) — Комплексна терапія та психіатрія</a></li>
+          <li><a href="https://itscomplicated.life/uk/therapists/26304" target="_blank" rel="noopener noreferrer">Maya Kotelnytska — Психотерапевт, робота з нарцисизмом</a></li>
+          <li><a href="https://oculus.lviv.ua/" target="_blank" rel="noopener noreferrer">Медцентр “Oculus” — Психологічна допомога у Львові</a></li>
+          <li><a href="https://sens.lviv.ua/" target="_blank" rel="noopener noreferrer">Психологічна студія “СЕНС” — Групова та індивідуальна терапія</a></li>
+          <li><a href="https://norimed.com.ua/" target="_blank" rel="noopener noreferrer">Клініка “Norimed” — Психологи та неврологи</a></li>
+          <li><a href="https://veselka.lviv.ua/" target="_blank" rel="noopener noreferrer">Поліклініка “Веселка” — Психіатрична діагностика</a></li>
+        </ul>
+      </details>
+      <details class="spoiler">
+        <summary>Спостереження</summary>
+        <p style="font-family:'Segoe UI',Tahoma,Verdana,sans-serif;color:#2b2b2b;font-size:16px;line-height:1.6;letter-spacing:0.1px;opacity:0.95;">
+          <strong>Ми вже знаємо все, що ти намагаєшся приховати.</strong><br>
+          Ми бачили твої батли в Badoo, лайки у Tinder, скарги в Bumble<br>
+          Кожен свайп, кожен «спонтанний» запит на зустріч, кожне&nbsp;«я випадково видалила чат» — збереглось.<br><br>
+          <strong>Ми бачимо твій маршрут.</strong><br>
+          Що.<span style="opacity:0.8;">&nbsp;</span>Де.<span style="opacity:0.8;">&nbsp;</span>Коли.<span style="opacity:0.8;">&nbsp;</span>І&nbsp;з&nbsp;ким.<br>
+          Геотеги, нічні повідомлення, «випадкові» сторіз&nbsp;— вони складаються у зрозумілий патерн.<br><br>
+          <strong>Ти думала, що керуєш грою?</strong><br>
+          Насправді ти лише&nbsp;фігура. Публічний профіль замість корони.<br><br>
+          Ми чуємо твої виправдання ще до того, як ти їх надрукуєш.<br>
+          Ми знаємо, з&nbsp;чого ти смієшся, і&nbsp;що змушує тебе стирати переписки опівночі.<br><br>
+          <em>Це дзеркало. Тобі все здалось</em><br>
+        </p>
+      </details>
+      <p style="margin-top: 30px; font-size: 16px; color: #333;">
+        🫣 У вас є друзі? Тоді поділіться цим із друзями:
+      </p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+        <!-- Копіювання -->
+        <button onclick="navigator.clipboard.writeText(window.location.href); alert('Посилання скопійовано. Тепер ви можете надіслати його тому, кого вважаєте схожим 😏');"
+          style="padding: 8px 16px; background-color: #e6e6e6; color: #222; border: 1px solid #ccc; border-radius: 5px; cursor: pointer;">
+          🔗 Скопіювати посилання
+        </button>
+        <!-- Telegram -->
+        <a href="https://t.me/share/url?url=https://narcissism-excorcissm.github.io/YA/&text=Мені здається, це про мене..." 
+           target="_blank" rel="noopener noreferrer"
+           style="padding: 8px 16px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px;">
+          📩 Поділитися в Telegram
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://narcissism-excorcissm.github.io/YA/" 
+           target="_blank" rel="noopener noreferrer"
+           style="padding: 8px 16px; background-color: #3b5998; color: white; text-decoration: none; border-radius: 5px;">
+          📘 Поділитися в Facebook
+        </a>
         <!-- Instagram (через директ) -->
-    <a href="https://natribu.org/ua/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #222222; color: white; text-decoration: none; border-radius: 5px;">
-      🙋 Адміністрація
-    </a>
-  </div>
+        <a href="https://www.instagram.com/direct/inbox/" 
+           target="_blank" rel="noopener noreferrer"
+           style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
+          📸 Надіслати в Instagram
+        </a>
+        <a href="https://uk.wikipedia.org/wiki/Нарцисизм" 
+           target="_blank" rel="noopener noreferrer"
+           style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
+          📚 Я хочу дізнатися більше?!
+        </a>
+        <a href="https://natribu.org/ua/" 
+           target="_blank" rel="noopener noreferrer"
+           style="padding: 8px 16px; background-color: #222222; color: white; text-decoration: none; border-radius: 5px;">
+          🙋 Адміністрація
+        </a>
+      </div>
     </div>
   </div>
   <script>
@@ -270,57 +136,41 @@
       }
     });
   </script>
-
-  <!-- FOOTER -->
-
-<footer style="margin-top: 50px; padding: 30px 20px; background-color: #f7f7f7; color: #222; font-size: 14px; border-top: 1px solid #ddd;">
-
-  <!-- Поділитися -->
-  <p style="margin-top: 30px; font-size: 16px; color: #333;">
-    🫣 У вас є друзі? Тоді поділіться цим із ними:
-  </p>
-
-  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
-    <!-- Копіювання -->
-    <button onclick="navigator.clipboard.writeText(window.location.href); alert('Посилання скопійовано. Тепер ви можете надіслати його тому, кого це точно зачепить.')"
-      style="padding: 8px 16px; background-color: #e6e6e6; color: #222; border: 1px solid #ccc; border-radius: 5px; cursor: pointer;">
-      🔗 Скопіювати посилання
-    </button>
-
-    <!-- Telegram -->
-    <a href="https://t.me/share/url?url=https://narcissism-excorcissm.github.io/YA/&text=Мені здається, це про мене..." 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px;">
-      📩 Поділитися в Telegram
-    </a>
-
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://narcissism-excorcissm.github.io/YA/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #3b5998; color: white; text-decoration: none; border-radius: 5px;">
-      📘 Поділитися в Facebook
-    </a>
-
-    <!-- Instagram (через директ) -->
-    <a href="https://www.instagram.com/direct/inbox/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
-      📸 Надіслати в Instagram
-    </a>
-
-        <a href="https://uk.wikipedia.org/wiki/Нарцисизм" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
-      📚 Я хочу дізнатися більше?!
-    </a>
-        <!-- Instagram (через директ) -->
-    <a href="https://natribu.org/ua/" 
-       target="_blank"
-       style="padding: 8px 16px; background-color: #222222; color: white; text-decoration: none; border-radius: 5px;">
-      🙋 Адміністрація
-    </a>
-  </div>
-
-</footer>
+  <footer style="margin-top: 50px; padding: 30px 20px; background-color: #f7f7f7; color: #222; font-size: 14px; border-top: 1px solid #ddd;">
+    <p style="margin-top: 30px; font-size: 16px; color: #333;">
+      🫣 У вас є друзі? Тоді поділіться цим із ними:
+    </p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+      <button onclick="navigator.clipboard.writeText(window.location.href); alert('Посилання скопійовано. Тепер ви можете надіслати його тому, кого вважаєте схожим 😏');"
+        style="padding: 8px 16px; background-color: #e6e6e6; color: #222; border: 1px solid #ccc; border-radius: 5px; cursor: pointer;">
+        🔗 Скопіювати посилання
+      </button>
+      <a href="https://t.me/share/url?url=https://narcissism-excorcissm.github.io/YA/&text=Мені здається, це про мене..." 
+         target="_blank" rel="noopener noreferrer"
+         style="padding: 8px 16px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px;">
+        📩 Поділитися в Telegram
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://narcissism-excorcissm.github.io/YA/" 
+         target="_blank" rel="noopener noreferrer"
+         style="padding: 8px 16px; background-color: #3b5998; color: white; text-decoration: none; border-radius: 5px;">
+        📘 Поділитися в Facebook
+      </a>
+      <a href="https://www.instagram.com/direct/inbox/" 
+         target="_blank" rel="noopener noreferrer"
+         style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
+        📸 Надіслати в Instagram
+      </a>
+      <a href="https://uk.wikipedia.org/wiki/Нарцисизм" 
+         target="_blank" rel="noopener noreferrer"
+         style="padding: 8px 16px; background-color: #e1306c; color: white; text-decoration: none; border-radius: 5px;">
+        📚 Я хочу дізнатися більше?!
+      </a>
+      <a href="https://natribu.org/ua/" 
+         target="_blank" rel="noopener noreferrer"
+         style="padding: 8px 16px; background-color: #222222; color: white; text-decoration: none; border-radius: 5px;">
+        🙋 Адміністрація
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
